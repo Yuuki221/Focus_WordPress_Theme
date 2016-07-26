@@ -1,0 +1,62 @@
+.site-header{
+	.site-branding{
+		.site-title{
+
+		}
+	}
+
+	.main-navigation{
+		.menu-toggle{
+
+		}
+	}
+}
+
+.site-branding{
+	width: 40%;
+	border-box: 
+}
+
+.header-pull-right{
+	float: right;
+}
+
+@media screen and (max-width: 320px){
+	.site-branding{
+		width: 78px;
+		height: 78px;
+		text-align: center;
+		padding: 20px;
+		background: #f78b24;
+		overflow: hidden;
+		margin: 10px;
+		margin-right: 10px;
+		h1, a{
+			display: block;
+			font-size: 1rem;
+			overflow: hidden;
+		}
+	}
+	.site-description{
+		visibility: hidden;
+	}
+	.menu-toggle{
+		float: right;
+		border: none;
+		outline: none;
+		background: #40a8bb;
+		width: 100px;
+		height: 40px;
+
+		position: fixed;
+		top: calc(100% - 150px);
+		left: calc(100% - 150px);
+		bottom: 0;
+		right: 0;
+
+		box-shadow: 0 1 0  rgba(0, 0, 0, .6);
+	}
+	.donate-button{
+		display: none;
+	}
+}
