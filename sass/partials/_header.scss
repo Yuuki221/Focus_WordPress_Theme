@@ -1,24 +1,58 @@
-.site-header{
-	.site-branding{
-		.site-title{
-
+.head-container{
+	max-width: 1200px;
+	margin: 0.67em auto;
+	.site-header{
+		font-size: 1rem;
+		width: 80%;
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		color: #000;
+		.col:first-child{
+			margin-left: 0;
+		}
+		.grid_3_of_12{
+			width: 23.8%;
+			display: block;
+		}
+		.grid_9_of_12{
+			width: 74.6%;
 		}
 	}
+	.col{
+		display: block;
+		float: left;
+		margin: 0 0 0 1.6%;
+	}
+	.donate-button{
+		float: right;
+		height: auto;
+		color: white;
+		border-radius: 5px;
+		background: #f78b24;
+		padding: 5px 30px;
+		transition: all 0.4s ease-in-out;
 
+		&:hover{
+			background: #29c1d9;
+		}
+
+		a{
+			color: white;
+			font-weight: 400;
+			&:hover{
+				color: white;
+			}
+		}
+
+	}
 	.main-navigation{
-		.menu-toggle{
-
+		float: right;
+		margin-top: 35px;
+		div{
+			float: right; 
 		}
 	}
-}
-
-.site-branding{
-	width: 40%;
-	border-box: 
-}
-
-.header-pull-right{
-	float: right;
 }
 
 @media screen and (max-width: 320px){

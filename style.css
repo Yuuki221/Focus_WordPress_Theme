@@ -102,7 +102,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0; }
 
 mark {
   background: #ff0;
@@ -288,7 +288,11 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #333; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -493,12 +497,47 @@ a {
 /*---------------------------------------------------------------
 # Header
 ----------------------------------------------------------------*/
-.site-branding {
-  width: 40%;
-  padding-right: 0; }
-
-.header-pull-right {
-  float: right; }
+.head-container {
+  max-width: 1200px;
+  margin: 0.67em auto; }
+  .head-container .site-header {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    color: #000; }
+    .head-container .site-header .col:first-child {
+      margin-left: 0; }
+    .head-container .site-header .grid_3_of_12 {
+      width: 23.8%;
+      display: block; }
+    .head-container .site-header .grid_9_of_12 {
+      width: 74.6%; }
+  .head-container .col {
+    display: block;
+    float: left;
+    margin: 0 0 0 1.6%; }
+  .head-container .donate-button {
+    float: right;
+    height: auto;
+    color: white;
+    border-radius: 5px;
+    background: #f78b24;
+    padding: 5px 30px;
+    transition: all 0.4s ease-in-out; }
+    .head-container .donate-button:hover {
+      background: #29c1d9; }
+    .head-container .donate-button a {
+      color: white;
+      font-weight: 400; }
+      .head-container .donate-button a:hover {
+        color: white; }
+  .head-container .main-navigation {
+    float: right;
+    margin-top: 35px; }
+    .head-container .main-navigation div {
+      float: right; }
 
 @media screen and (max-width: 320px) {
   .site-branding {
