@@ -52,5 +52,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
+// omit the side bar in home page 
 get_sidebar();
 get_footer();
