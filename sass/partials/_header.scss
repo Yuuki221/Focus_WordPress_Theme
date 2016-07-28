@@ -53,6 +53,12 @@
 			float: right; 
 		}
 	}
+	.page_item a{
+		font-weight: 600;
+	}
+	.page_item{
+		margin: 0 5px 0 5px;
+	}
 }
 
 @media screen and (max-width: 320px){
