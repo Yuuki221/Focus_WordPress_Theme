@@ -1,0 +1,11 @@
+.slide-wrap{
+	position: relative;
+	width: 80%;
+	height: 30%;
+	
+	& img{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}

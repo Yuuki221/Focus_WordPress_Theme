@@ -6,3 +6,11 @@
 	 */
 	get_header();
 ?>
+
+<div class="slide-wrap">
+	<div class="slide-container">
+		<div class="indi-slide"><img href=""></div>
+		<div class="indi-slide"><img href=""></div>
+		<div class="indi-slide"><img href=""></div>
+	</div> 
+</div>
