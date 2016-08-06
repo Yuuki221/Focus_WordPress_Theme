@@ -15,9 +15,48 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'non-profit-focus' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'non-profit-focus' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'non-profit-focus' ), 'non-profit-focus', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<div class="col grid_3" role="complementary">
+				<aside id="address-info" class="footer-sec address">
+					<h3 class="footer-sec-title">FOCUS Pittsburgh</h3>
+					<div class="footer-main-text">
+						<p>
+							2228 Centre Avenue
+						<br>
+							Pittsburgh
+						<br>
+							PA 15219
+						</p>
+					</div>
+				</aside>
+			</div>
+			<div class="col grid_3" role="complementary">
+				<aside id="donate-info" class="footer-sec donate">
+					<h3 class="footer-sec-title">Donations</h3>
+					<div class="footer-main-text">
+						<p>
+							FOCUS Pittsburgh
+						<br>
+							PO Box XXXXXXX
+						<br>
+							Pittsburgh, PA 15219
+						</p>
+					</div>
+				</aside>
+			</div>
+			<div class="col grid_3" role="complementary">
+				<aside id="subscribe-privacy" class="footer-sec subscribe">
+					<div class="subscribe-inner">
+						<h3>
+							<a href="#">
+								Subscribe
+							</a>
+						</h3>
+						<h3>
+							<a href="#">Privacy policy</a>
+						</h3>
+					</div>
+				</aside>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
