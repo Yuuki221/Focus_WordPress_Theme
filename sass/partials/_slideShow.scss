@@ -1,11 +1,22 @@
 .slide-wrap{
 	position: relative;
-	width: 80%;
-	height: 30%;
-	
-	& img{
+	width: $slidearea_width;
+	height: $slidearea_height;
+	background: #aaa;
+	.slide-container{
+		display: block;
 		position: absolute;
-		left: 0;
-		top: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		.indi-slide{
+			width: 80%;
+			height: 100%;
+			margin: 0 auto;
+			img{
+				display: block;
+				z-index: 5;
+			}
+		}
 	}
 }
