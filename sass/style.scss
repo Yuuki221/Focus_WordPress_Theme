@@ -40,6 +40,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Posts and pages
 	## Comments
 	## SlideShow 
+	## Intro Paragraph
+	## Footer
 # Infinite scroll
 # Media
 	## Captions
@@ -106,6 +108,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # SlideShow
 --------------------------------------------------------------*/
 @import "partials/slideShow";
+
+/*--------------------------------------------------------------
+# Intro Paragraph
+--------------------------------------------------------------*/
+@import "partials/intro_para";
+
+/*--------------------------------------------------------------
+# Footer 
+--------------------------------------------------------------*/
+@import "partials/footer";
 
 /*--------------------------------------------------------------
 # Infinite scroll
