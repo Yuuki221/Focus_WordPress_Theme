@@ -108,14 +108,14 @@ function non_profit_focus_scripts() {
 
 	wp_enqueue_script( 'non-profit-focus-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	// enqueue new javascript file 
-	wp_enqueue_script( 'non-profit-focus-front-page-slideshow', get_template_directory_url() . '/js/front-page-slideshow.js', array(), '20151215', true);
+	wp_enqueue_script( 'non-profit-focus-front-page-slideshow', get_template_directory_uri() . '/js/front-page-slideshow.js', array(), '20151215', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	// include jquery in theme 
-	wp_enqueue_script('jquery', get_template_directory_url() . '/js/jquery-3.1.0.min.js', array(), '20151215', true);
+	wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.1.0.min.js', array(), '20151215', true);
 }
 add_action( 'wp_enqueue_scripts', 'non_profit_focus_scripts' );
 
