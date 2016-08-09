@@ -115,7 +115,7 @@ function non_profit_focus_scripts() {
 	}
 
 	// include jquery in theme 
-	wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.1.0.min.js', array(), '20151215', true);
+	wp_enqueue_script('jquery');
 }
 add_action( 'wp_enqueue_scripts', 'non_profit_focus_scripts' );
 

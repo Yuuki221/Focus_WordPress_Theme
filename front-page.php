@@ -9,7 +9,9 @@
 
 <div class="slide-wrap">
 	<div class="slide-container">
-		<div class="indi-slide"><img src="http://placehold.it/1033X448"></div>
+		<img class="indi-slide" src="http://placehold.it/1033X448" role="img">
+		<!-- <img class="indi-slide" src="http://placehold.it/1033X448" role="img">
+		<img class="indi-slide" src="http://placehold.it/1033X448" role="img"> -->
 	</div> 
 </div>
 <div class="intro-para-wrap">
