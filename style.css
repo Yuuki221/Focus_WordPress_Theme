@@ -715,19 +715,22 @@ a {
   width: 100%;
   height: 448px;
   background: #aaa; }
-  .slide-wrap .slide-container {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto; }
-    .slide-wrap .slide-container .indi-slide {
-      width: 80%;
-      height: 100%;
-      margin: 0 auto; }
-      .slide-wrap .slide-container .indi-slide img {
-        display: block;
-        z-index: 5; }
+  .slide-wrap:before {
+    clear: both; }
+
+.slide-container {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 80%;
+  height: 448px;
+  margin: 0 auto; }
+
+.slide-contianer > * {
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 100%; }
 
 /*--------------------------------------------------------------
 # Intro Paragraph

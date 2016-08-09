@@ -1,22 +1,29 @@
-.slide-wrap{
+.slide-wrap {
 	position: relative;
 	width: $slidearea_width;
 	height: $slidearea_height;
 	background: #aaa;
-	.slide-container{
-		display: block;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		margin: 0 auto;
-		.indi-slide{
-			width: 80%;
-			height: 100%;
-			margin: 0 auto;
-			img{
-				display: block;
-				z-index: 5;
-			}
-		}
+	&:before{
+		clear: both;
 	}
+}
+
+.slide-container {
+		display: block;
+		position: relative;
+		top:0;
+		
+		width: 80%;
+		height: $slidearea_height;
+		
+		margin: 0 auto;
+}
+
+.slide-contianer > * {
+		position: absolute;
+
+		display: block;
+
+		width: 80%;
+		height: 100%;
 }
