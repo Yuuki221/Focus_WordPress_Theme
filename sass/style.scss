@@ -42,6 +42,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## SlideShow 
 	## Intro Paragraph
 	## Footer
+	## Sidebar
+	## Main Content 
+	## DropdownList
 # Infinite scroll
 # Media
 	## Captions
@@ -118,6 +121,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Footer 
 --------------------------------------------------------------*/
 @import "partials/footer";
+
+/*--------------------------------------------------------------
+# Sidebar 
+---------------------------------------------------------------*/
+@import "partials/sidebar";
+
+/*---------------------------------------------------------------
+# Main Content
+----------------------------------------------------------------*/
+@import "partials/main_content";
+
+/*---------------------------------------------------------------
+# DropdownList
+----------------------------------------------------------------*/
+@import "partials/dropdownlist.scss";
 
 /*--------------------------------------------------------------
 # Infinite scroll
