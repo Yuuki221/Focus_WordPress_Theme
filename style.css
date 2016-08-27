@@ -41,6 +41,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## SlideShow 
 	## Intro Paragraph
 	## Footer
+	## Sidebar
+	## Main Content 
+	## DropdownList
 # Infinite scroll
 # Media
 	## Captions
@@ -60,6 +63,7 @@ body {
 article,
 aside,
 details,
+div,
 figcaption,
 figure,
 footer,
@@ -67,9 +71,11 @@ header,
 main,
 menu,
 nav,
+p,
 section,
 summary {
-  display: block; }
+  display: block;
+  box-sizing: border-box; }
 
 audio,
 canvas,
@@ -312,7 +318,7 @@ ul, ol {
   margin: 0 0 1.5em 3em; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -426,7 +432,7 @@ a {
   a:visited {
     color: #000; }
   a:hover, a:focus, a:active {
-    color: #000; }
+    color: #29c1d9; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -501,12 +507,16 @@ a {
 # Header
 ----------------------------------------------------------------*/
 .head-container {
-  max-width: 1200px;
-  margin: 0.67em auto; }
+  max-width: 100%;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0; }
   .head-container .site-header {
     font-size: 1rem;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 0.67em;
     padding: 0;
     position: relative;
     color: #000; }
@@ -538,7 +548,7 @@ a {
         color: white; }
   .head-container .main-navigation {
     float: right;
-    margin-top: 35px; }
+    margin-top: 65px; }
     .head-container .main-navigation div {
       float: right; }
   .head-container .page_item a {
@@ -580,6 +590,19 @@ a {
 
   .donate-button {
     display: none; } }
+.head-container::after {
+  clear: both; }
+
+.page-title-banner {
+  width: 100%;
+  padding: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  background: #f78b24; }
+
+.page-banner-title {
+  color: #eaeaea; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -765,6 +788,66 @@ a {
     margin: 20px auto;
     width: 80%;
     height: 100%; }
+
+/*--------------------------------------------------------------
+# Sidebar 
+---------------------------------------------------------------*/
+.widget-area {
+  width: 14%;
+  float: right;
+  position: relative;
+  margin-left: 0;
+  margin-right: 120px;
+  margin-top: 100px; }
+
+.widget-area::before {
+  clear: both; }
+
+.widget-area::after {
+  clear: both; }
+
+/*---------------------------------------------------------------
+# Main Content
+----------------------------------------------------------------*/
+.content-area {
+  width: 75%;
+  margin: 0;
+  float: left; }
+
+.site-main {
+  margin-top: 20px;
+  margin-left: 168px;
+  margin-right: 20px; }
+
+.content-area::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.entry-header {
+  display: none; }
+
+/*---------------------------------------------------------------
+# DropdownList
+----------------------------------------------------------------*/
+.children {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+.children .page_item {
+  display: block;
+  padding: 5px;
+  background: #fff;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #efefef; }
+  .children .page_item:first-child {
+    border-top: none; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
