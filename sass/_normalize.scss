@@ -11,6 +11,7 @@ body {
 article,
 aside,
 details,
+div,
 figcaption,
 figure,
 footer,
@@ -18,9 +19,11 @@ header,
 main,
 menu,
 nav,
+p,
 section,
 summary {
 	display: block;
+	box-sizing: border-box;
 }
 
 audio,
