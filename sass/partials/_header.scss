@@ -1,10 +1,15 @@
 .head-container{
-	max-width: 1200px;
-	margin: 0.67em auto;
+	max-width: 100%;
+	
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+	margin-left: 0;
+	margin-right: 0;
 	.site-header{
 		font-size: 1rem;
 		width: 80%;
 		margin: 0 auto;
+		margin-bottom: 0.67em;
 		padding: 0;
 		position: relative;
 		color: #000;
@@ -48,7 +53,7 @@
 	}
 	.main-navigation{
 		float: right;
-		margin-top: 35px;
+		margin-top: 65px;
 		div{
 			float: right; 
 		}
@@ -99,4 +104,22 @@
 	.donate-button{
 		display: none;
 	}
+}
+.head-container::after {
+	clear: both;
+}
+.page-title-banner {
+	width: 100%;
+
+	padding: 20px;
+
+	margin-left: 0;
+	margin-right: 0;
+
+	background: $Orange;
+
+}
+
+.page-banner-title {
+	color: $LightSilver;
 }
