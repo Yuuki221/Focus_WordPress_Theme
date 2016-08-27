@@ -1,0 +1,21 @@
+.children {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.children .page_item {
+	display: block;
+
+	padding: 5px;
+	background: #fff;
+
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #efefef;
+	&:first-child {
+		border-top: none;
+	}
+}
