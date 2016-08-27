@@ -1,0 +1,15 @@
+.widget-area {
+	width: $size__site-sidebar;
+	float: right;
+	position: relative;
+
+	margin-left: $margin-sidebar-left;
+	margin-right: $margin-sidebar-right;
+	margin-top: $margin-sidebar-top;
+}
+.widget-area::before {
+	clear: both;
+}
+.widget-area::after {
+	clear: both;
+}
