@@ -1,3 +1,5 @@
+// the copyright is reserved by https://github.com/mathiasbynens/jquery-slideshow
+// use the simplest jquery slideshow plugin 
 jQuery(function($){
 	(function($){
 		$.fn.slideshow = function(options){
