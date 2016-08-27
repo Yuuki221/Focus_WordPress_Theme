@@ -26,21 +26,15 @@
 	<div class="head-container">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding col grid_3_of_12">
-				<?php
-				if ( is_front_page() && is_home() ) : ?>
 					<h1 class="site-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="http://placehold.it/202X94" height="94" width="202" alt="FOCUS pittsburgh Logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="focus logo" rel="home" >
+							<img src="<?php echo get_template_directory_uri(); ?>/images/focus-logo.png" height="94" width="202" alt="FOCUS pittsburgh Logo">
 						</a>
 					</h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-				endif;?>
 			</div><!-- .site-branding -->
 			<div class="col grid_9_of_12 site-title">
 				<div class="donate-button">
-					<a href="#">Donate</a> 
+					<a href="<?php echo get_permalink(get_page_by_title('Donate'));?>">Donate</a> 
 				</div>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'non-profit-focus' ); ?></button>
@@ -48,5 +42,10 @@
 				</nav><!-- #site-navigation -->
 			</div>
 		</header><!-- #masthead -->
+		<?php if(!is_front_page()): ?>
+			<div class="page-title-banner">
+				<h1 class="page-banner-title"><?php echo get_the_title(); ?></h1>
+			</div>
+		<?php endif;?>
 	</div>
 	<div id="content" class="site-content">
