@@ -1,0 +1,23 @@
+.content-area {
+  width: $size__site-content;
+  margin: 0;
+  float: left;
+}
+
+.site-main {
+	margin-top: $margin-main-top;
+	margin-left: $margin-main-left;
+	margin-right: $margin-main-right;
+}
+
+.content-area::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.entry-header {
+	display: none;
+}
