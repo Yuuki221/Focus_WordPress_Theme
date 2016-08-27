@@ -1,6 +1,6 @@
 <?php
 /**
- * The sidebar containing the main widget area.
+ * The sidebar used in pages other than main home page.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
